@@ -32,7 +32,7 @@ def train_model(args):
     os.makedirs('models', exist_ok=True)
     
     # Load data
-    train_df = pd.read_csv('data/train.tsv', sep='\t', header=0)
+    train_df = pd.read_csv(r"C:/Desktop/ML bootcamp/multi-class-sentiment-analysis/data/train/train.tsv", sep='\t', header=0)
     
     # Preprocess
     tokenizer = Tokenizer(num_words=args.max_features, oov_token='<OOV>')
